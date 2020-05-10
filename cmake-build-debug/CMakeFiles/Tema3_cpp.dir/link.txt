@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Tema3_cpp.dir/client.cpp.o CMakeFiles/Tema3_cpp.dir/helpers.cpp.o CMakeFiles/Tema3_cpp.dir/requests.cpp.o CMakeFiles/Tema3_cpp.dir/buffer.cpp.o CMakeFiles/Tema3_cpp.dir/commands.cpp.o  -o Tema3_cpp 
