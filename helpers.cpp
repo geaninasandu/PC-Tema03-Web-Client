@@ -124,7 +124,7 @@ bool check_user_logged_in(bool logged_in, int command_index) {
         return true;
     }
 
-    if (!logged_in) {
+    if (!logged_in && command_index != 9) {
         cout << "You can't issue this command unless you are logged in!" <<
              endl;
         return false;
