@@ -25,7 +25,6 @@ string &token);
 void delete_book_command(int sockfd, const vector<string> &cookies, const
 string &token);
 
-bool logout_command(int sockfd, const vector<string> &cookies, const
-string &token);
+bool logout_command(int sockfd, vector<string> &cookies, string &token);
 
 #endif //COMMANDS_H

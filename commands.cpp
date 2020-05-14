@@ -287,8 +287,7 @@ string &token) {
  * @return      false if the logout was successful, true otherwise; (the return
  * value will be used to determine if the user is logged in)
  */
-bool logout_command(int sockfd, const vector<string> &cookies, const
-string &token) {
+bool logout_command(int sockfd, vector<string> &cookies, string &token) {
     const char *url = "/api/v1/tema/auth/logout";
     const string success = "200 OK";
     char *response;
@@ -299,6 +298,8 @@ string &token) {
 
     if (response_string.find(success) != string::npos) {
         cout << "You were successfully logged out!" << endl;
+        cookies.clear();
+        token = "";
         free(response);
         return false;
     }
